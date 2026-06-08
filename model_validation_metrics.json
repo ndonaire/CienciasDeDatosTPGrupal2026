@@ -1,0 +1,2156 @@
+{
+  "dataset_shapes": {
+    "train_rows": 48000,
+    "predict_rows": 12000
+  },
+  "target_distribution": {
+    "0": 40798,
+    "1": 7202
+  },
+  "target_positive_rate": 0.15004166666666666,
+  "missing_train_top_percent": {
+    "customer_lifetime_value": 0.25002083333333336,
+    "cross_sell_score": 0.24991666666666668,
+    "total_international_amount_last_month": 0.24952083333333333,
+    "savings_growth_rate_last_6_months": 0.15154166666666666,
+    "email_click_rate_last_3_months": 0.15127083333333333,
+    "balance_volatility": 0.151125,
+    "email_open_rate_last_3_months": 0.15058333333333335,
+    "investment_balance": 0.15002083333333333,
+    "sms_response_rate_last_3_months": 0.14985416666666668,
+    "num_transactions_last_month": 0.0515625,
+    "savings_balance": 0.050479166666666665,
+    "credit_score": 0.050145833333333334,
+    "avg_transaction_amount_last_month": 0.049,
+    "income": 0.048875,
+    "checking_balance": 0.0488125,
+    "education_level": 0.0,
+    "employment_status": 0.0,
+    "has_investment_account": 0.0,
+    "has_personal_loan": 0.0,
+    "has_mortgage": 0.0,
+    "owns_home": 0.0,
+    "marital_status": 0.0,
+    "num_dependents": 0.0,
+    "has_savings_account": 0.0,
+    "has_checking_account": 0.0,
+    "has_credit_card": 0.0,
+    "customer_id": 0.0,
+    "age": 0.0,
+    "snapshot_date": 0.0,
+    "tenure_months": 0.0,
+    "num_products": 0.0,
+    "num_withdrawals_last_month": 0.0,
+    "total_deposit_amount_last_month": 0.0,
+    "num_deposits_last_month": 0.0,
+    "total_transaction_amount_last_month": 0.0,
+    "num_online_transactions_last_month": 0.0,
+    "num_pos_transactions_last_month": 0.0,
+    "num_atm_withdrawals_last_month": 0.0,
+    "credit_card_balance": 0.0,
+    "num_mobile_logins_last_month": 0.0,
+    "num_branch_visits_last_month": 0.0,
+    "num_customer_service_calls_last_month": 0.0,
+    "num_web_logins_last_month": 0.0,
+    "num_international_transactions_last_month": 0.0,
+    "total_withdrawal_amount_last_month": 0.0,
+    "total_bill_payment_amount_last_month": 0.0,
+    "num_bill_payments_last_month": 0.0,
+    "num_products_purchased_last_year": 0.0,
+    "credit_utilization": 0.0,
+    "debt_to_income_ratio": 0.0,
+    "months_since_last_product_purchase": 0.0,
+    "num_late_payments_last_year": 0.0,
+    "avg_monthly_balance": 0.0,
+    "num_overdrafts_last_year": 0.0,
+    "total_overdraft_fees_last_year": 0.0,
+    "num_failed_transactions_last_month": 0.0,
+    "has_auto_pay_setup": 0.0,
+    "has_direct_deposit": 0.0,
+    "risk_score": 0.0,
+    "recency_score": 0.0,
+    "frequency_score": 0.0,
+    "monetary_score": 0.0,
+    "target_product_acquired": 0.0
+  },
+  "baseline_metrics": {
+    "auc_roc": 0.8084336999521007,
+    "precision_at_0.5": 0.7875816993464052,
+    "recall_at_0.5": 0.15813648293963253,
+    "f1_score_at_0.5": 0.2633879781420765
+  },
+  "final_metrics": {
+    "auc_roc": 0.8084336999521007,
+    "precision_at_0.5": 0.7875816993464052,
+    "recall_at_0.5": 0.15813648293963253,
+    "f1_score_at_0.5": 0.2633879781420765
+  },
+  "baseline_importance": [
+    {
+      "feature": "intercept",
+      "coefficient": -1.9758781343550915,
+      "absolute_coefficient": 1.9758781343550915
+    },
+    {
+      "feature": "income",
+      "coefficient": 0.6017398462240727,
+      "absolute_coefficient": 0.6017398462240727
+    },
+    {
+      "feature": "credit_score",
+      "coefficient": 0.17368913268410932,
+      "absolute_coefficient": 0.17368913268410932
+    },
+    {
+      "feature": "debt_to_income_ratio",
+      "coefficient": 0.17254683390971012,
+      "absolute_coefficient": 0.17254683390971012
+    },
+    {
+      "feature": "customer_lifetime_value",
+      "coefficient": 0.164096053983731,
+      "absolute_coefficient": 0.164096053983731
+    },
+    {
+      "feature": "has_any_investment_signal",
+      "coefficient": 0.16156453312598312,
+      "absolute_coefficient": 0.16156453312598312
+    },
+    {
+      "feature": "has_investment_account",
+      "coefficient": 0.16156453312598265,
+      "absolute_coefficient": 0.16156453312598265
+    },
+    {
+      "feature": "num_products",
+      "coefficient": 0.13880885473133414,
+      "absolute_coefficient": 0.13880885473133414
+    },
+    {
+      "feature": "credit_card_balance",
+      "coefficient": 0.12756842350912773,
+      "absolute_coefficient": 0.12756842350912773
+    },
+    {
+      "feature": "avg_monthly_balance",
+      "coefficient": 0.10091558728414186,
+      "absolute_coefficient": 0.10091558728414186
+    },
+    {
+      "feature": "financial_stability",
+      "coefficient": 0.09232247798503368,
+      "absolute_coefficient": 0.09232247798503368
+    },
+    {
+      "feature": "debt_by_risk_interaction",
+      "coefficient": 0.0836145592523345,
+      "absolute_coefficient": 0.0836145592523345
+    },
+    {
+      "feature": "total_liquid_balance",
+      "coefficient": 0.08260992830220645,
+      "absolute_coefficient": 0.08260992830220645
+    },
+    {
+      "feature": "savings_balance",
+      "coefficient": 0.08235033940754707,
+      "absolute_coefficient": 0.08235033940754707
+    },
+    {
+      "feature": "credit_utilization",
+      "coefficient": 0.06333190278716061,
+      "absolute_coefficient": 0.06333190278716061
+    },
+    {
+      "feature": "tenure_months",
+      "coefficient": -0.06249039245228675,
+      "absolute_coefficient": 0.06249039245228675
+    },
+    {
+      "feature": "num_mobile_logins_last_month",
+      "coefficient": 0.046259383939699764,
+      "absolute_coefficient": 0.046259383939699764
+    },
+    {
+      "feature": "has_personal_loan",
+      "coefficient": -0.03564043178182383,
+      "absolute_coefficient": 0.03564043178182383
+    },
+    {
+      "feature": "digital_logins_total",
+      "coefficient": 0.031167779855071125,
+      "absolute_coefficient": 0.031167779855071125
+    },
+    {
+      "feature": "risk_score",
+      "coefficient": -0.025830918424509512,
+      "absolute_coefficient": 0.025830918424509512
+    },
+    {
+      "feature": "customer_lifetime_value_missing",
+      "coefficient": 0.025554414696321217,
+      "absolute_coefficient": 0.025554414696321217
+    },
+    {
+      "feature": "income_missing",
+      "coefficient": 0.024231475009004334,
+      "absolute_coefficient": 0.024231475009004334
+    },
+    {
+      "feature": "has_credit_card",
+      "coefficient": 0.022842097668350044,
+      "absolute_coefficient": 0.022842097668350044
+    },
+    {
+      "feature": "has_checking_account",
+      "coefficient": 0.018603088046164937,
+      "absolute_coefficient": 0.018603088046164937
+    },
+    {
+      "feature": "savings_growth_rate_last_6_months",
+      "coefficient": -0.01681092056548871,
+      "absolute_coefficient": 0.01681092056548871
+    },
+    {
+      "feature": "email_open_rate_last_3_months",
+      "coefficient": 0.016712311102176993,
+      "absolute_coefficient": 0.016712311102176993
+    },
+    {
+      "feature": "months_since_last_product_purchase",
+      "coefficient": -0.016494630524520496,
+      "absolute_coefficient": 0.016494630524520496
+    },
+    {
+      "feature": "has_direct_deposit",
+      "coefficient": -0.016360754646307627,
+      "absolute_coefficient": 0.016360754646307627
+    },
+    {
+      "feature": "cross_sell_score",
+      "coefficient": -0.01634986985142523,
+      "absolute_coefficient": 0.01634986985142523
+    },
+    {
+      "feature": "premium_financial_profile",
+      "coefficient": 0.015749818371001922,
+      "absolute_coefficient": 0.015749818371001922
+    },
+    {
+      "feature": "num_late_payments_last_year",
+      "coefficient": -0.015220325756559783,
+      "absolute_coefficient": 0.015220325756559783
+    },
+    {
+      "feature": "total_withdrawal_amount_last_month",
+      "coefficient": 0.014583551454195518,
+      "absolute_coefficient": 0.014583551454195518
+    },
+    {
+      "feature": "owns_home",
+      "coefficient": 0.013963102252694051,
+      "absolute_coefficient": 0.013963102252694051
+    },
+    {
+      "feature": "num_withdrawals_last_month",
+      "coefficient": 0.013035632626737147,
+      "absolute_coefficient": 0.013035632626737147
+    },
+    {
+      "feature": "num_transactions_last_month",
+      "coefficient": 0.012219666891091632,
+      "absolute_coefficient": 0.012219666891091632
+    },
+    {
+      "feature": "savings_balance_missing",
+      "coefficient": 0.012115449897228047,
+      "absolute_coefficient": 0.012115449897228047
+    },
+    {
+      "feature": "has_auto_pay_setup",
+      "coefficient": 0.011987887714391222,
+      "absolute_coefficient": 0.011987887714391222
+    },
+    {
+      "feature": "snapshot_dayofyear",
+      "coefficient": -0.01118460626213613,
+      "absolute_coefficient": 0.01118460626213613
+    },
+    {
+      "feature": "num_bill_payments_last_month",
+      "coefficient": -0.011027036451110164,
+      "absolute_coefficient": 0.011027036451110164
+    },
+    {
+      "feature": "num_failed_transactions_last_month",
+      "coefficient": 0.010718222751613625,
+      "absolute_coefficient": 0.010718222751613625
+    },
+    {
+      "feature": "investment_balance",
+      "coefficient": -0.010322079365750636,
+      "absolute_coefficient": 0.010322079365750636
+    },
+    {
+      "feature": "total_transaction_amount_last_month",
+      "coefficient": -0.009467099513040127,
+      "absolute_coefficient": 0.009467099513040127
+    },
+    {
+      "feature": "num_branch_visits_last_month",
+      "coefficient": 0.009094828662814984,
+      "absolute_coefficient": 0.009094828662814984
+    },
+    {
+      "feature": "snapshot_month",
+      "coefficient": -0.00901859248436842,
+      "absolute_coefficient": 0.00901859248436842
+    },
+    {
+      "feature": "num_online_transactions_last_month",
+      "coefficient": 0.008970209737996764,
+      "absolute_coefficient": 0.008970209737996764
+    },
+    {
+      "feature": "checking_balance_missing",
+      "coefficient": -0.008735916678893469,
+      "absolute_coefficient": 0.008735916678893469
+    },
+    {
+      "feature": "sms_response_rate_last_3_months",
+      "coefficient": 0.008609034935913612,
+      "absolute_coefficient": 0.008609034935913612
+    },
+    {
+      "feature": "balance_volatility",
+      "coefficient": -0.008514191399310284,
+      "absolute_coefficient": 0.008514191399310284
+    },
+    {
+      "feature": "avg_transaction_amount_last_month_missing",
+      "coefficient": 0.00797228541685027,
+      "absolute_coefficient": 0.00797228541685027
+    },
+    {
+      "feature": "total_international_amount_last_month",
+      "coefficient": -0.007651152302206604,
+      "absolute_coefficient": 0.007651152302206604
+    },
+    {
+      "feature": "num_web_logins_last_month",
+      "coefficient": -0.007531067621642614,
+      "absolute_coefficient": 0.007531067621642614
+    },
+    {
+      "feature": "cross_sell_score_missing",
+      "coefficient": -0.007234399888257453,
+      "absolute_coefficient": 0.007234399888257453
+    },
+    {
+      "feature": "avg_transaction_amount_last_month",
+      "coefficient": -0.007198190368031478,
+      "absolute_coefficient": 0.007198190368031478
+    },
+    {
+      "feature": "total_financial_balance",
+      "coefficient": 0.006956346839790932,
+      "absolute_coefficient": 0.006956346839790932
+    },
+    {
+      "feature": "num_pos_transactions_last_month",
+      "coefficient": -0.006815304906352754,
+      "absolute_coefficient": 0.006815304906352754
+    },
+    {
+      "feature": "age",
+      "coefficient": 0.00675623000982064,
+      "absolute_coefficient": 0.00675623000982064
+    },
+    {
+      "feature": "email_click_rate_last_3_months_missing",
+      "coefficient": 0.006485693460856338,
+      "absolute_coefficient": 0.006485693460856338
+    },
+    {
+      "feature": "total_international_amount_last_month_missing",
+      "coefficient": -0.00632103617054049,
+      "absolute_coefficient": 0.00632103617054049
+    },
+    {
+      "feature": "checking_balance",
+      "coefficient": -0.0057550729103952375,
+      "absolute_coefficient": 0.0057550729103952375
+    },
+    {
+      "feature": "has_savings_account",
+      "coefficient": 0.005714959535111419,
+      "absolute_coefficient": 0.005714959535111419
+    },
+    {
+      "feature": "num_dependents",
+      "coefficient": -0.005155984512274496,
+      "absolute_coefficient": 0.005155984512274496
+    },
+    {
+      "feature": "total_overdraft_fees_last_year",
+      "coefficient": 0.005065199778792867,
+      "absolute_coefficient": 0.005065199778792867
+    },
+    {
+      "feature": "num_overdrafts_last_year",
+      "coefficient": 0.005065199778792864,
+      "absolute_coefficient": 0.005065199778792864
+    },
+    {
+      "feature": "total_bill_payment_amount_last_month",
+      "coefficient": 0.004953342982510646,
+      "absolute_coefficient": 0.004953342982510646
+    },
+    {
+      "feature": "deposit_withdrawal_net",
+      "coefficient": -0.00491709505284707,
+      "absolute_coefficient": 0.00491709505284707
+    },
+    {
+      "feature": "num_transactions_last_month_missing",
+      "coefficient": 0.004196967726100753,
+      "absolute_coefficient": 0.004196967726100753
+    },
+    {
+      "feature": "num_customer_service_calls_last_month",
+      "coefficient": 0.003984232671572923,
+      "absolute_coefficient": 0.003984232671572923
+    },
+    {
+      "feature": "num_atm_withdrawals_last_month",
+      "coefficient": -0.003910837671585508,
+      "absolute_coefficient": 0.003910837671585508
+    },
+    {
+      "feature": "num_international_transactions_last_month",
+      "coefficient": -0.0036211133867242134,
+      "absolute_coefficient": 0.0036211133867242134
+    },
+    {
+      "feature": "num_deposits_last_month",
+      "coefficient": 0.003510722365018947,
+      "absolute_coefficient": 0.003510722365018947
+    },
+    {
+      "feature": "investment_balance_missing",
+      "coefficient": 0.003407388905108582,
+      "absolute_coefficient": 0.003407388905108582
+    },
+    {
+      "feature": "has_mortgage",
+      "coefficient": -0.003206131283367538,
+      "absolute_coefficient": 0.003206131283367538
+    },
+    {
+      "feature": "sms_response_rate_last_3_months_missing",
+      "coefficient": -0.0030220570502653746,
+      "absolute_coefficient": 0.0030220570502653746
+    },
+    {
+      "feature": "email_open_rate_last_3_months_missing",
+      "coefficient": 0.0029075299454711027,
+      "absolute_coefficient": 0.0029075299454711027
+    },
+    {
+      "feature": "total_deposit_amount_last_month",
+      "coefficient": 0.002872360164320588,
+      "absolute_coefficient": 0.002872360164320588
+    },
+    {
+      "feature": "has_active_credit_products",
+      "coefficient": 0.0024033235118148706,
+      "absolute_coefficient": 0.0024033235118148706
+    },
+    {
+      "feature": "recency_score",
+      "coefficient": -0.0023072553924973318,
+      "absolute_coefficient": 0.0023072553924973318
+    },
+    {
+      "feature": "num_products_purchased_last_year",
+      "coefficient": -0.0022609984234930602,
+      "absolute_coefficient": 0.0022609984234930602
+    },
+    {
+      "feature": "total_liquid_balance_missing",
+      "coefficient": -0.0019465948062965192,
+      "absolute_coefficient": 0.0019465948062965192
+    },
+    {
+      "feature": "frequency_score",
+      "coefficient": 0.0017758618112160684,
+      "absolute_coefficient": 0.0017758618112160684
+    },
+    {
+      "feature": "balance_volatility_missing",
+      "coefficient": 0.0016713946487593174,
+      "absolute_coefficient": 0.0016713946487593174
+    },
+    {
+      "feature": "email_click_rate_last_3_months",
+      "coefficient": 0.001409229789146366,
+      "absolute_coefficient": 0.001409229789146366
+    },
+    {
+      "feature": "savings_growth_rate_last_6_months_missing",
+      "coefficient": 0.001025671022165344,
+      "absolute_coefficient": 0.001025671022165344
+    },
+    {
+      "feature": "total_financial_balance_missing",
+      "coefficient": -0.0009480916037764929,
+      "absolute_coefficient": 0.0009480916037764929
+    },
+    {
+      "feature": "financial_stability_missing",
+      "coefficient": -0.000489765680013938,
+      "absolute_coefficient": 0.000489765680013938
+    },
+    {
+      "feature": "credit_score_missing",
+      "coefficient": -0.0004897656800064074,
+      "absolute_coefficient": 0.0004897656800064074
+    },
+    {
+      "feature": "monetary_score",
+      "coefficient": -0.0002342545406916957,
+      "absolute_coefficient": 0.0002342545406916957
+    },
+    {
+      "feature": "total_transaction_amount_last_month_missing",
+      "coefficient": -6.411768486810763e-20,
+      "absolute_coefficient": 6.411768486810763e-20
+    },
+    {
+      "feature": "has_personal_loan_missing",
+      "coefficient": -5.38134484108768e-20,
+      "absolute_coefficient": 5.38134484108768e-20
+    },
+    {
+      "feature": "num_failed_transactions_last_month_missing",
+      "coefficient": 1.8360912969900478e-20,
+      "absolute_coefficient": 1.8360912969900478e-20
+    },
+    {
+      "feature": "tenure_months_missing",
+      "coefficient": -6.110852384621441e-21,
+      "absolute_coefficient": 6.110852384621441e-21
+    },
+    {
+      "feature": "num_products_missing",
+      "coefficient": 4.600995143145057e-21,
+      "absolute_coefficient": 4.600995143145057e-21
+    },
+    {
+      "feature": "num_international_transactions_last_month_missing",
+      "coefficient": 3.0732124856834954e-21,
+      "absolute_coefficient": 3.0732124856834954e-21
+    },
+    {
+      "feature": "debt_to_income_ratio_missing",
+      "coefficient": 8.711512737440824e-24,
+      "absolute_coefficient": 8.711512737440824e-24
+    },
+    {
+      "feature": "num_atm_withdrawals_last_month_missing",
+      "coefficient": -7.949036140761005e-24,
+      "absolute_coefficient": 7.949036140761005e-24
+    },
+    {
+      "feature": "deposit_withdrawal_net_missing",
+      "coefficient": -4.451688289505164e-25,
+      "absolute_coefficient": 4.451688289505164e-25
+    },
+    {
+      "feature": "num_dependents_missing",
+      "coefficient": 5.757140616904838e-26,
+      "absolute_coefficient": 5.757140616904838e-26
+    },
+    {
+      "feature": "num_late_payments_last_year_missing",
+      "coefficient": -5.231917176783558e-27,
+      "absolute_coefficient": 5.231917176783558e-27
+    },
+    {
+      "feature": "age_missing",
+      "coefficient": 3.639074168114619e-27,
+      "absolute_coefficient": 3.639074168114619e-27
+    },
+    {
+      "feature": "num_withdrawals_last_month_missing",
+      "coefficient": -3.4402545222416976e-27,
+      "absolute_coefficient": 3.4402545222416976e-27
+    },
+    {
+      "feature": "owns_home_missing",
+      "coefficient": 1.834064495052236e-27,
+      "absolute_coefficient": 1.834064495052236e-27
+    },
+    {
+      "feature": "total_overdraft_fees_last_year_missing",
+      "coefficient": 1.8854707764404858e-28,
+      "absolute_coefficient": 1.8854707764404858e-28
+    },
+    {
+      "feature": "snapshot_dayofyear_missing",
+      "coefficient": 1.7141658480968015e-28,
+      "absolute_coefficient": 1.7141658480968015e-28
+    },
+    {
+      "feature": "num_online_transactions_last_month_missing",
+      "coefficient": 2.7802068952286243e-29,
+      "absolute_coefficient": 2.7802068952286243e-29
+    },
+    {
+      "feature": "debt_by_risk_interaction_missing",
+      "coefficient": 2.8780409378176157e-30,
+      "absolute_coefficient": 2.8780409378176157e-30
+    },
+    {
+      "feature": "num_customer_service_calls_last_month_missing",
+      "coefficient": 2.3066929831302248e-30,
+      "absolute_coefficient": 2.3066929831302248e-30
+    },
+    {
+      "feature": "total_withdrawal_amount_last_month_missing",
+      "coefficient": -1.5004909689152707e-30,
+      "absolute_coefficient": 1.5004909689152707e-30
+    },
+    {
+      "feature": "digital_logins_total_missing",
+      "coefficient": -7.2370987524858745e-31,
+      "absolute_coefficient": 7.2370987524858745e-31
+    },
+    {
+      "feature": "has_credit_card_missing",
+      "coefficient": -5.737953447045485e-31,
+      "absolute_coefficient": 5.737953447045485e-31
+    },
+    {
+      "feature": "has_mortgage_missing",
+      "coefficient": -4.484916493487347e-31,
+      "absolute_coefficient": 4.484916493487347e-31
+    },
+    {
+      "feature": "premium_financial_profile_missing",
+      "coefficient": -1.1030092004696703e-31,
+      "absolute_coefficient": 1.1030092004696703e-31
+    },
+    {
+      "feature": "avg_monthly_balance_missing",
+      "coefficient": 8.70523765873893e-32,
+      "absolute_coefficient": 8.70523765873893e-32
+    },
+    {
+      "feature": "num_bill_payments_last_month_missing",
+      "coefficient": 3.713539071238425e-32,
+      "absolute_coefficient": 3.713539071238425e-32
+    },
+    {
+      "feature": "credit_utilization_missing",
+      "coefficient": 3.4172846509011646e-33,
+      "absolute_coefficient": 3.4172846509011646e-33
+    },
+    {
+      "feature": "has_auto_pay_setup_missing",
+      "coefficient": 2.6171622593724275e-33,
+      "absolute_coefficient": 2.6171622593724275e-33
+    },
+    {
+      "feature": "snapshot_month_missing",
+      "coefficient": 6.22177248305531e-34,
+      "absolute_coefficient": 6.22177248305531e-34
+    },
+    {
+      "feature": "credit_card_balance_missing",
+      "coefficient": -3.2715066750159507e-34,
+      "absolute_coefficient": 3.2715066750159507e-34
+    },
+    {
+      "feature": "has_investment_account_missing",
+      "coefficient": -1.7526932559957536e-34,
+      "absolute_coefficient": 1.7526932559957536e-34
+    },
+    {
+      "feature": "num_products_purchased_last_year_missing",
+      "coefficient": -1.1781363186640834e-34,
+      "absolute_coefficient": 1.1781363186640834e-34
+    },
+    {
+      "feature": "frequency_score_missing",
+      "coefficient": 1.1061912613346086e-34,
+      "absolute_coefficient": 1.1061912613346086e-34
+    },
+    {
+      "feature": "months_since_last_product_purchase_missing",
+      "coefficient": 1.0155035768513003e-34,
+      "absolute_coefficient": 1.0155035768513003e-34
+    },
+    {
+      "feature": "num_branch_visits_last_month_missing",
+      "coefficient": 4.885779398520345e-35,
+      "absolute_coefficient": 4.885779398520345e-35
+    },
+    {
+      "feature": "has_any_investment_signal_missing",
+      "coefficient": -4.45621564869663e-35,
+      "absolute_coefficient": 4.45621564869663e-35
+    },
+    {
+      "feature": "num_mobile_logins_last_month_missing",
+      "coefficient": -3.565653262052463e-35,
+      "absolute_coefficient": 3.565653262052463e-35
+    },
+    {
+      "feature": "recency_score_missing",
+      "coefficient": 3.4780406642024294e-35,
+      "absolute_coefficient": 3.4780406642024294e-35
+    },
+    {
+      "feature": "risk_score_missing",
+      "coefficient": 1.4848906921184097e-35,
+      "absolute_coefficient": 1.4848906921184097e-35
+    },
+    {
+      "feature": "num_overdrafts_last_year_missing",
+      "coefficient": 1.3483183458904482e-35,
+      "absolute_coefficient": 1.3483183458904482e-35
+    },
+    {
+      "feature": "num_web_logins_last_month_missing",
+      "coefficient": -9.205482504378648e-36,
+      "absolute_coefficient": 9.205482504378648e-36
+    },
+    {
+      "feature": "num_pos_transactions_last_month_missing",
+      "coefficient": 5.970614393535375e-36,
+      "absolute_coefficient": 5.970614393535375e-36
+    },
+    {
+      "feature": "has_active_credit_products_missing",
+      "coefficient": -2.193111714647648e-36,
+      "absolute_coefficient": 2.193111714647648e-36
+    },
+    {
+      "feature": "monetary_score_missing",
+      "coefficient": -2.4845174035759097e-38,
+      "absolute_coefficient": 2.4845174035759097e-38
+    },
+    {
+      "feature": "has_checking_account_missing",
+      "coefficient": 1.7028796952205845e-38,
+      "absolute_coefficient": 1.7028796952205845e-38
+    },
+    {
+      "feature": "has_savings_account_missing",
+      "coefficient": -1.6541828410709235e-38,
+      "absolute_coefficient": 1.6541828410709235e-38
+    },
+    {
+      "feature": "num_deposits_last_month_missing",
+      "coefficient": 2.9147429719550884e-39,
+      "absolute_coefficient": 2.9147429719550884e-39
+    },
+    {
+      "feature": "has_direct_deposit_missing",
+      "coefficient": 7.441792202643678e-40,
+      "absolute_coefficient": 7.441792202643678e-40
+    },
+    {
+      "feature": "total_deposit_amount_last_month_missing",
+      "coefficient": -1.7038380568837424e-40,
+      "absolute_coefficient": 1.7038380568837424e-40
+    },
+    {
+      "feature": "total_bill_payment_amount_last_month_missing",
+      "coefficient": -1.1322744187306338e-41,
+      "absolute_coefficient": 1.1322744187306338e-41
+    }
+  ],
+  "validation_importance": [
+    {
+      "feature": "intercept",
+      "coefficient": -1.9758781343550915,
+      "absolute_coefficient": 1.9758781343550915
+    },
+    {
+      "feature": "income",
+      "coefficient": 0.6017398462240727,
+      "absolute_coefficient": 0.6017398462240727
+    },
+    {
+      "feature": "credit_score",
+      "coefficient": 0.17368913268410932,
+      "absolute_coefficient": 0.17368913268410932
+    },
+    {
+      "feature": "debt_to_income_ratio",
+      "coefficient": 0.17254683390971012,
+      "absolute_coefficient": 0.17254683390971012
+    },
+    {
+      "feature": "customer_lifetime_value",
+      "coefficient": 0.164096053983731,
+      "absolute_coefficient": 0.164096053983731
+    },
+    {
+      "feature": "has_any_investment_signal",
+      "coefficient": 0.16156453312598312,
+      "absolute_coefficient": 0.16156453312598312
+    },
+    {
+      "feature": "has_investment_account",
+      "coefficient": 0.16156453312598265,
+      "absolute_coefficient": 0.16156453312598265
+    },
+    {
+      "feature": "num_products",
+      "coefficient": 0.13880885473133414,
+      "absolute_coefficient": 0.13880885473133414
+    },
+    {
+      "feature": "credit_card_balance",
+      "coefficient": 0.12756842350912773,
+      "absolute_coefficient": 0.12756842350912773
+    },
+    {
+      "feature": "avg_monthly_balance",
+      "coefficient": 0.10091558728414186,
+      "absolute_coefficient": 0.10091558728414186
+    },
+    {
+      "feature": "financial_stability",
+      "coefficient": 0.09232247798503368,
+      "absolute_coefficient": 0.09232247798503368
+    },
+    {
+      "feature": "debt_by_risk_interaction",
+      "coefficient": 0.0836145592523345,
+      "absolute_coefficient": 0.0836145592523345
+    },
+    {
+      "feature": "total_liquid_balance",
+      "coefficient": 0.08260992830220645,
+      "absolute_coefficient": 0.08260992830220645
+    },
+    {
+      "feature": "savings_balance",
+      "coefficient": 0.08235033940754707,
+      "absolute_coefficient": 0.08235033940754707
+    },
+    {
+      "feature": "credit_utilization",
+      "coefficient": 0.06333190278716061,
+      "absolute_coefficient": 0.06333190278716061
+    },
+    {
+      "feature": "tenure_months",
+      "coefficient": -0.06249039245228675,
+      "absolute_coefficient": 0.06249039245228675
+    },
+    {
+      "feature": "num_mobile_logins_last_month",
+      "coefficient": 0.046259383939699764,
+      "absolute_coefficient": 0.046259383939699764
+    },
+    {
+      "feature": "has_personal_loan",
+      "coefficient": -0.03564043178182383,
+      "absolute_coefficient": 0.03564043178182383
+    },
+    {
+      "feature": "digital_logins_total",
+      "coefficient": 0.031167779855071125,
+      "absolute_coefficient": 0.031167779855071125
+    },
+    {
+      "feature": "risk_score",
+      "coefficient": -0.025830918424509512,
+      "absolute_coefficient": 0.025830918424509512
+    },
+    {
+      "feature": "customer_lifetime_value_missing",
+      "coefficient": 0.025554414696321217,
+      "absolute_coefficient": 0.025554414696321217
+    },
+    {
+      "feature": "income_missing",
+      "coefficient": 0.024231475009004334,
+      "absolute_coefficient": 0.024231475009004334
+    },
+    {
+      "feature": "has_credit_card",
+      "coefficient": 0.022842097668350044,
+      "absolute_coefficient": 0.022842097668350044
+    },
+    {
+      "feature": "has_checking_account",
+      "coefficient": 0.018603088046164937,
+      "absolute_coefficient": 0.018603088046164937
+    },
+    {
+      "feature": "savings_growth_rate_last_6_months",
+      "coefficient": -0.01681092056548871,
+      "absolute_coefficient": 0.01681092056548871
+    },
+    {
+      "feature": "email_open_rate_last_3_months",
+      "coefficient": 0.016712311102176993,
+      "absolute_coefficient": 0.016712311102176993
+    },
+    {
+      "feature": "months_since_last_product_purchase",
+      "coefficient": -0.016494630524520496,
+      "absolute_coefficient": 0.016494630524520496
+    },
+    {
+      "feature": "has_direct_deposit",
+      "coefficient": -0.016360754646307627,
+      "absolute_coefficient": 0.016360754646307627
+    },
+    {
+      "feature": "cross_sell_score",
+      "coefficient": -0.01634986985142523,
+      "absolute_coefficient": 0.01634986985142523
+    },
+    {
+      "feature": "premium_financial_profile",
+      "coefficient": 0.015749818371001922,
+      "absolute_coefficient": 0.015749818371001922
+    },
+    {
+      "feature": "num_late_payments_last_year",
+      "coefficient": -0.015220325756559783,
+      "absolute_coefficient": 0.015220325756559783
+    },
+    {
+      "feature": "total_withdrawal_amount_last_month",
+      "coefficient": 0.014583551454195518,
+      "absolute_coefficient": 0.014583551454195518
+    },
+    {
+      "feature": "owns_home",
+      "coefficient": 0.013963102252694051,
+      "absolute_coefficient": 0.013963102252694051
+    },
+    {
+      "feature": "num_withdrawals_last_month",
+      "coefficient": 0.013035632626737147,
+      "absolute_coefficient": 0.013035632626737147
+    },
+    {
+      "feature": "num_transactions_last_month",
+      "coefficient": 0.012219666891091632,
+      "absolute_coefficient": 0.012219666891091632
+    },
+    {
+      "feature": "savings_balance_missing",
+      "coefficient": 0.012115449897228047,
+      "absolute_coefficient": 0.012115449897228047
+    },
+    {
+      "feature": "has_auto_pay_setup",
+      "coefficient": 0.011987887714391222,
+      "absolute_coefficient": 0.011987887714391222
+    },
+    {
+      "feature": "snapshot_dayofyear",
+      "coefficient": -0.01118460626213613,
+      "absolute_coefficient": 0.01118460626213613
+    },
+    {
+      "feature": "num_bill_payments_last_month",
+      "coefficient": -0.011027036451110164,
+      "absolute_coefficient": 0.011027036451110164
+    },
+    {
+      "feature": "num_failed_transactions_last_month",
+      "coefficient": 0.010718222751613625,
+      "absolute_coefficient": 0.010718222751613625
+    },
+    {
+      "feature": "investment_balance",
+      "coefficient": -0.010322079365750636,
+      "absolute_coefficient": 0.010322079365750636
+    },
+    {
+      "feature": "total_transaction_amount_last_month",
+      "coefficient": -0.009467099513040127,
+      "absolute_coefficient": 0.009467099513040127
+    },
+    {
+      "feature": "num_branch_visits_last_month",
+      "coefficient": 0.009094828662814984,
+      "absolute_coefficient": 0.009094828662814984
+    },
+    {
+      "feature": "snapshot_month",
+      "coefficient": -0.00901859248436842,
+      "absolute_coefficient": 0.00901859248436842
+    },
+    {
+      "feature": "num_online_transactions_last_month",
+      "coefficient": 0.008970209737996764,
+      "absolute_coefficient": 0.008970209737996764
+    },
+    {
+      "feature": "checking_balance_missing",
+      "coefficient": -0.008735916678893469,
+      "absolute_coefficient": 0.008735916678893469
+    },
+    {
+      "feature": "sms_response_rate_last_3_months",
+      "coefficient": 0.008609034935913612,
+      "absolute_coefficient": 0.008609034935913612
+    },
+    {
+      "feature": "balance_volatility",
+      "coefficient": -0.008514191399310284,
+      "absolute_coefficient": 0.008514191399310284
+    },
+    {
+      "feature": "avg_transaction_amount_last_month_missing",
+      "coefficient": 0.00797228541685027,
+      "absolute_coefficient": 0.00797228541685027
+    },
+    {
+      "feature": "total_international_amount_last_month",
+      "coefficient": -0.007651152302206604,
+      "absolute_coefficient": 0.007651152302206604
+    },
+    {
+      "feature": "num_web_logins_last_month",
+      "coefficient": -0.007531067621642614,
+      "absolute_coefficient": 0.007531067621642614
+    },
+    {
+      "feature": "cross_sell_score_missing",
+      "coefficient": -0.007234399888257453,
+      "absolute_coefficient": 0.007234399888257453
+    },
+    {
+      "feature": "avg_transaction_amount_last_month",
+      "coefficient": -0.007198190368031478,
+      "absolute_coefficient": 0.007198190368031478
+    },
+    {
+      "feature": "total_financial_balance",
+      "coefficient": 0.006956346839790932,
+      "absolute_coefficient": 0.006956346839790932
+    },
+    {
+      "feature": "num_pos_transactions_last_month",
+      "coefficient": -0.006815304906352754,
+      "absolute_coefficient": 0.006815304906352754
+    },
+    {
+      "feature": "age",
+      "coefficient": 0.00675623000982064,
+      "absolute_coefficient": 0.00675623000982064
+    },
+    {
+      "feature": "email_click_rate_last_3_months_missing",
+      "coefficient": 0.006485693460856338,
+      "absolute_coefficient": 0.006485693460856338
+    },
+    {
+      "feature": "total_international_amount_last_month_missing",
+      "coefficient": -0.00632103617054049,
+      "absolute_coefficient": 0.00632103617054049
+    },
+    {
+      "feature": "checking_balance",
+      "coefficient": -0.0057550729103952375,
+      "absolute_coefficient": 0.0057550729103952375
+    },
+    {
+      "feature": "has_savings_account",
+      "coefficient": 0.005714959535111419,
+      "absolute_coefficient": 0.005714959535111419
+    },
+    {
+      "feature": "num_dependents",
+      "coefficient": -0.005155984512274496,
+      "absolute_coefficient": 0.005155984512274496
+    },
+    {
+      "feature": "total_overdraft_fees_last_year",
+      "coefficient": 0.005065199778792867,
+      "absolute_coefficient": 0.005065199778792867
+    },
+    {
+      "feature": "num_overdrafts_last_year",
+      "coefficient": 0.005065199778792864,
+      "absolute_coefficient": 0.005065199778792864
+    },
+    {
+      "feature": "total_bill_payment_amount_last_month",
+      "coefficient": 0.004953342982510646,
+      "absolute_coefficient": 0.004953342982510646
+    },
+    {
+      "feature": "deposit_withdrawal_net",
+      "coefficient": -0.00491709505284707,
+      "absolute_coefficient": 0.00491709505284707
+    },
+    {
+      "feature": "num_transactions_last_month_missing",
+      "coefficient": 0.004196967726100753,
+      "absolute_coefficient": 0.004196967726100753
+    },
+    {
+      "feature": "num_customer_service_calls_last_month",
+      "coefficient": 0.003984232671572923,
+      "absolute_coefficient": 0.003984232671572923
+    },
+    {
+      "feature": "num_atm_withdrawals_last_month",
+      "coefficient": -0.003910837671585508,
+      "absolute_coefficient": 0.003910837671585508
+    },
+    {
+      "feature": "num_international_transactions_last_month",
+      "coefficient": -0.0036211133867242134,
+      "absolute_coefficient": 0.0036211133867242134
+    },
+    {
+      "feature": "num_deposits_last_month",
+      "coefficient": 0.003510722365018947,
+      "absolute_coefficient": 0.003510722365018947
+    },
+    {
+      "feature": "investment_balance_missing",
+      "coefficient": 0.003407388905108582,
+      "absolute_coefficient": 0.003407388905108582
+    },
+    {
+      "feature": "has_mortgage",
+      "coefficient": -0.003206131283367538,
+      "absolute_coefficient": 0.003206131283367538
+    },
+    {
+      "feature": "sms_response_rate_last_3_months_missing",
+      "coefficient": -0.0030220570502653746,
+      "absolute_coefficient": 0.0030220570502653746
+    },
+    {
+      "feature": "email_open_rate_last_3_months_missing",
+      "coefficient": 0.0029075299454711027,
+      "absolute_coefficient": 0.0029075299454711027
+    },
+    {
+      "feature": "total_deposit_amount_last_month",
+      "coefficient": 0.002872360164320588,
+      "absolute_coefficient": 0.002872360164320588
+    },
+    {
+      "feature": "has_active_credit_products",
+      "coefficient": 0.0024033235118148706,
+      "absolute_coefficient": 0.0024033235118148706
+    },
+    {
+      "feature": "recency_score",
+      "coefficient": -0.0023072553924973318,
+      "absolute_coefficient": 0.0023072553924973318
+    },
+    {
+      "feature": "num_products_purchased_last_year",
+      "coefficient": -0.0022609984234930602,
+      "absolute_coefficient": 0.0022609984234930602
+    },
+    {
+      "feature": "total_liquid_balance_missing",
+      "coefficient": -0.0019465948062965192,
+      "absolute_coefficient": 0.0019465948062965192
+    },
+    {
+      "feature": "frequency_score",
+      "coefficient": 0.0017758618112160684,
+      "absolute_coefficient": 0.0017758618112160684
+    },
+    {
+      "feature": "balance_volatility_missing",
+      "coefficient": 0.0016713946487593174,
+      "absolute_coefficient": 0.0016713946487593174
+    },
+    {
+      "feature": "email_click_rate_last_3_months",
+      "coefficient": 0.001409229789146366,
+      "absolute_coefficient": 0.001409229789146366
+    },
+    {
+      "feature": "savings_growth_rate_last_6_months_missing",
+      "coefficient": 0.001025671022165344,
+      "absolute_coefficient": 0.001025671022165344
+    },
+    {
+      "feature": "total_financial_balance_missing",
+      "coefficient": -0.0009480916037764929,
+      "absolute_coefficient": 0.0009480916037764929
+    },
+    {
+      "feature": "financial_stability_missing",
+      "coefficient": -0.000489765680013938,
+      "absolute_coefficient": 0.000489765680013938
+    },
+    {
+      "feature": "credit_score_missing",
+      "coefficient": -0.0004897656800064074,
+      "absolute_coefficient": 0.0004897656800064074
+    },
+    {
+      "feature": "monetary_score",
+      "coefficient": -0.0002342545406916957,
+      "absolute_coefficient": 0.0002342545406916957
+    },
+    {
+      "feature": "total_transaction_amount_last_month_missing",
+      "coefficient": -6.411768486810763e-20,
+      "absolute_coefficient": 6.411768486810763e-20
+    },
+    {
+      "feature": "has_personal_loan_missing",
+      "coefficient": -5.38134484108768e-20,
+      "absolute_coefficient": 5.38134484108768e-20
+    },
+    {
+      "feature": "num_failed_transactions_last_month_missing",
+      "coefficient": 1.8360912969900478e-20,
+      "absolute_coefficient": 1.8360912969900478e-20
+    },
+    {
+      "feature": "tenure_months_missing",
+      "coefficient": -6.110852384621441e-21,
+      "absolute_coefficient": 6.110852384621441e-21
+    },
+    {
+      "feature": "num_products_missing",
+      "coefficient": 4.600995143145057e-21,
+      "absolute_coefficient": 4.600995143145057e-21
+    },
+    {
+      "feature": "num_international_transactions_last_month_missing",
+      "coefficient": 3.0732124856834954e-21,
+      "absolute_coefficient": 3.0732124856834954e-21
+    },
+    {
+      "feature": "debt_to_income_ratio_missing",
+      "coefficient": 8.711512737440824e-24,
+      "absolute_coefficient": 8.711512737440824e-24
+    },
+    {
+      "feature": "num_atm_withdrawals_last_month_missing",
+      "coefficient": -7.949036140761005e-24,
+      "absolute_coefficient": 7.949036140761005e-24
+    },
+    {
+      "feature": "deposit_withdrawal_net_missing",
+      "coefficient": -4.451688289505164e-25,
+      "absolute_coefficient": 4.451688289505164e-25
+    },
+    {
+      "feature": "num_dependents_missing",
+      "coefficient": 5.757140616904838e-26,
+      "absolute_coefficient": 5.757140616904838e-26
+    },
+    {
+      "feature": "num_late_payments_last_year_missing",
+      "coefficient": -5.231917176783558e-27,
+      "absolute_coefficient": 5.231917176783558e-27
+    },
+    {
+      "feature": "age_missing",
+      "coefficient": 3.639074168114619e-27,
+      "absolute_coefficient": 3.639074168114619e-27
+    },
+    {
+      "feature": "num_withdrawals_last_month_missing",
+      "coefficient": -3.4402545222416976e-27,
+      "absolute_coefficient": 3.4402545222416976e-27
+    },
+    {
+      "feature": "owns_home_missing",
+      "coefficient": 1.834064495052236e-27,
+      "absolute_coefficient": 1.834064495052236e-27
+    },
+    {
+      "feature": "total_overdraft_fees_last_year_missing",
+      "coefficient": 1.8854707764404858e-28,
+      "absolute_coefficient": 1.8854707764404858e-28
+    },
+    {
+      "feature": "snapshot_dayofyear_missing",
+      "coefficient": 1.7141658480968015e-28,
+      "absolute_coefficient": 1.7141658480968015e-28
+    },
+    {
+      "feature": "num_online_transactions_last_month_missing",
+      "coefficient": 2.7802068952286243e-29,
+      "absolute_coefficient": 2.7802068952286243e-29
+    },
+    {
+      "feature": "debt_by_risk_interaction_missing",
+      "coefficient": 2.8780409378176157e-30,
+      "absolute_coefficient": 2.8780409378176157e-30
+    },
+    {
+      "feature": "num_customer_service_calls_last_month_missing",
+      "coefficient": 2.3066929831302248e-30,
+      "absolute_coefficient": 2.3066929831302248e-30
+    },
+    {
+      "feature": "total_withdrawal_amount_last_month_missing",
+      "coefficient": -1.5004909689152707e-30,
+      "absolute_coefficient": 1.5004909689152707e-30
+    },
+    {
+      "feature": "digital_logins_total_missing",
+      "coefficient": -7.2370987524858745e-31,
+      "absolute_coefficient": 7.2370987524858745e-31
+    },
+    {
+      "feature": "has_credit_card_missing",
+      "coefficient": -5.737953447045485e-31,
+      "absolute_coefficient": 5.737953447045485e-31
+    },
+    {
+      "feature": "has_mortgage_missing",
+      "coefficient": -4.484916493487347e-31,
+      "absolute_coefficient": 4.484916493487347e-31
+    },
+    {
+      "feature": "premium_financial_profile_missing",
+      "coefficient": -1.1030092004696703e-31,
+      "absolute_coefficient": 1.1030092004696703e-31
+    },
+    {
+      "feature": "avg_monthly_balance_missing",
+      "coefficient": 8.70523765873893e-32,
+      "absolute_coefficient": 8.70523765873893e-32
+    },
+    {
+      "feature": "num_bill_payments_last_month_missing",
+      "coefficient": 3.713539071238425e-32,
+      "absolute_coefficient": 3.713539071238425e-32
+    },
+    {
+      "feature": "credit_utilization_missing",
+      "coefficient": 3.4172846509011646e-33,
+      "absolute_coefficient": 3.4172846509011646e-33
+    },
+    {
+      "feature": "has_auto_pay_setup_missing",
+      "coefficient": 2.6171622593724275e-33,
+      "absolute_coefficient": 2.6171622593724275e-33
+    },
+    {
+      "feature": "snapshot_month_missing",
+      "coefficient": 6.22177248305531e-34,
+      "absolute_coefficient": 6.22177248305531e-34
+    },
+    {
+      "feature": "credit_card_balance_missing",
+      "coefficient": -3.2715066750159507e-34,
+      "absolute_coefficient": 3.2715066750159507e-34
+    },
+    {
+      "feature": "has_investment_account_missing",
+      "coefficient": -1.7526932559957536e-34,
+      "absolute_coefficient": 1.7526932559957536e-34
+    },
+    {
+      "feature": "num_products_purchased_last_year_missing",
+      "coefficient": -1.1781363186640834e-34,
+      "absolute_coefficient": 1.1781363186640834e-34
+    },
+    {
+      "feature": "frequency_score_missing",
+      "coefficient": 1.1061912613346086e-34,
+      "absolute_coefficient": 1.1061912613346086e-34
+    },
+    {
+      "feature": "months_since_last_product_purchase_missing",
+      "coefficient": 1.0155035768513003e-34,
+      "absolute_coefficient": 1.0155035768513003e-34
+    },
+    {
+      "feature": "num_branch_visits_last_month_missing",
+      "coefficient": 4.885779398520345e-35,
+      "absolute_coefficient": 4.885779398520345e-35
+    },
+    {
+      "feature": "has_any_investment_signal_missing",
+      "coefficient": -4.45621564869663e-35,
+      "absolute_coefficient": 4.45621564869663e-35
+    },
+    {
+      "feature": "num_mobile_logins_last_month_missing",
+      "coefficient": -3.565653262052463e-35,
+      "absolute_coefficient": 3.565653262052463e-35
+    },
+    {
+      "feature": "recency_score_missing",
+      "coefficient": 3.4780406642024294e-35,
+      "absolute_coefficient": 3.4780406642024294e-35
+    },
+    {
+      "feature": "risk_score_missing",
+      "coefficient": 1.4848906921184097e-35,
+      "absolute_coefficient": 1.4848906921184097e-35
+    },
+    {
+      "feature": "num_overdrafts_last_year_missing",
+      "coefficient": 1.3483183458904482e-35,
+      "absolute_coefficient": 1.3483183458904482e-35
+    },
+    {
+      "feature": "num_web_logins_last_month_missing",
+      "coefficient": -9.205482504378648e-36,
+      "absolute_coefficient": 9.205482504378648e-36
+    },
+    {
+      "feature": "num_pos_transactions_last_month_missing",
+      "coefficient": 5.970614393535375e-36,
+      "absolute_coefficient": 5.970614393535375e-36
+    },
+    {
+      "feature": "has_active_credit_products_missing",
+      "coefficient": -2.193111714647648e-36,
+      "absolute_coefficient": 2.193111714647648e-36
+    },
+    {
+      "feature": "monetary_score_missing",
+      "coefficient": -2.4845174035759097e-38,
+      "absolute_coefficient": 2.4845174035759097e-38
+    },
+    {
+      "feature": "has_checking_account_missing",
+      "coefficient": 1.7028796952205845e-38,
+      "absolute_coefficient": 1.7028796952205845e-38
+    },
+    {
+      "feature": "has_savings_account_missing",
+      "coefficient": -1.6541828410709235e-38,
+      "absolute_coefficient": 1.6541828410709235e-38
+    },
+    {
+      "feature": "num_deposits_last_month_missing",
+      "coefficient": 2.9147429719550884e-39,
+      "absolute_coefficient": 2.9147429719550884e-39
+    },
+    {
+      "feature": "has_direct_deposit_missing",
+      "coefficient": 7.441792202643678e-40,
+      "absolute_coefficient": 7.441792202643678e-40
+    },
+    {
+      "feature": "total_deposit_amount_last_month_missing",
+      "coefficient": -1.7038380568837424e-40,
+      "absolute_coefficient": 1.7038380568837424e-40
+    },
+    {
+      "feature": "total_bill_payment_amount_last_month_missing",
+      "coefficient": -1.1322744187306338e-41,
+      "absolute_coefficient": 1.1322744187306338e-41
+    }
+  ],
+  "final_importance_full_training": [
+    {
+      "feature": "intercept",
+      "coefficient": -1.9583632272492264,
+      "absolute_coefficient": 1.9583632272492264
+    },
+    {
+      "feature": "income",
+      "coefficient": 0.6064869340663213,
+      "absolute_coefficient": 0.6064869340663213
+    },
+    {
+      "feature": "credit_score",
+      "coefficient": 0.17386944150645056,
+      "absolute_coefficient": 0.17386944150645056
+    },
+    {
+      "feature": "debt_to_income_ratio",
+      "coefficient": 0.17137116633527263,
+      "absolute_coefficient": 0.17137116633527263
+    },
+    {
+      "feature": "has_any_investment_signal",
+      "coefficient": 0.1690740919562346,
+      "absolute_coefficient": 0.1690740919562346
+    },
+    {
+      "feature": "has_investment_account",
+      "coefficient": 0.16907409195623452,
+      "absolute_coefficient": 0.16907409195623452
+    },
+    {
+      "feature": "customer_lifetime_value",
+      "coefficient": 0.16170909199640804,
+      "absolute_coefficient": 0.16170909199640804
+    },
+    {
+      "feature": "num_products",
+      "coefficient": 0.14067563784087458,
+      "absolute_coefficient": 0.14067563784087458
+    },
+    {
+      "feature": "credit_card_balance",
+      "coefficient": 0.12748442634169396,
+      "absolute_coefficient": 0.12748442634169396
+    },
+    {
+      "feature": "avg_monthly_balance",
+      "coefficient": 0.09877367662357069,
+      "absolute_coefficient": 0.09877367662357069
+    },
+    {
+      "feature": "financial_stability",
+      "coefficient": 0.09509125873779294,
+      "absolute_coefficient": 0.09509125873779294
+    },
+    {
+      "feature": "savings_balance",
+      "coefficient": 0.07941423133296818,
+      "absolute_coefficient": 0.07941423133296818
+    },
+    {
+      "feature": "total_liquid_balance",
+      "coefficient": 0.07935453795078841,
+      "absolute_coefficient": 0.07935453795078841
+    },
+    {
+      "feature": "debt_by_risk_interaction",
+      "coefficient": 0.07827078033982586,
+      "absolute_coefficient": 0.07827078033982586
+    },
+    {
+      "feature": "tenure_months",
+      "coefficient": -0.06273790558948608,
+      "absolute_coefficient": 0.06273790558948608
+    },
+    {
+      "feature": "credit_utilization",
+      "coefficient": 0.05895409229264481,
+      "absolute_coefficient": 0.05895409229264481
+    },
+    {
+      "feature": "num_mobile_logins_last_month",
+      "coefficient": 0.04889924040276678,
+      "absolute_coefficient": 0.04889924040276678
+    },
+    {
+      "feature": "has_personal_loan",
+      "coefficient": -0.03784318706054671,
+      "absolute_coefficient": 0.03784318706054671
+    },
+    {
+      "feature": "digital_logins_total",
+      "coefficient": 0.03242296544877899,
+      "absolute_coefficient": 0.03242296544877899
+    },
+    {
+      "feature": "risk_score",
+      "coefficient": -0.029311396087920504,
+      "absolute_coefficient": 0.029311396087920504
+    },
+    {
+      "feature": "has_credit_card",
+      "coefficient": 0.027524285874820104,
+      "absolute_coefficient": 0.027524285874820104
+    },
+    {
+      "feature": "income_missing",
+      "coefficient": 0.023710425912338136,
+      "absolute_coefficient": 0.023710425912338136
+    },
+    {
+      "feature": "customer_lifetime_value_missing",
+      "coefficient": 0.01941665298194538,
+      "absolute_coefficient": 0.01941665298194538
+    },
+    {
+      "feature": "has_direct_deposit",
+      "coefficient": -0.017479557682578962,
+      "absolute_coefficient": 0.017479557682578962
+    },
+    {
+      "feature": "num_branch_visits_last_month",
+      "coefficient": 0.017380186926926926,
+      "absolute_coefficient": 0.017380186926926926
+    },
+    {
+      "feature": "premium_financial_profile",
+      "coefficient": 0.017250443179423463,
+      "absolute_coefficient": 0.017250443179423463
+    },
+    {
+      "feature": "has_auto_pay_setup",
+      "coefficient": 0.01637108239027977,
+      "absolute_coefficient": 0.01637108239027977
+    },
+    {
+      "feature": "owns_home",
+      "coefficient": 0.01567085091212675,
+      "absolute_coefficient": 0.01567085091212675
+    },
+    {
+      "feature": "num_withdrawals_last_month",
+      "coefficient": 0.013964115018827591,
+      "absolute_coefficient": 0.013964115018827591
+    },
+    {
+      "feature": "cross_sell_score",
+      "coefficient": -0.013845769660785899,
+      "absolute_coefficient": 0.013845769660785899
+    },
+    {
+      "feature": "investment_balance",
+      "coefficient": -0.012968964325842611,
+      "absolute_coefficient": 0.012968964325842611
+    },
+    {
+      "feature": "months_since_last_product_purchase",
+      "coefficient": -0.012868621277733847,
+      "absolute_coefficient": 0.012868621277733847
+    },
+    {
+      "feature": "num_late_payments_last_year",
+      "coefficient": -0.01143915539291253,
+      "absolute_coefficient": 0.01143915539291253
+    },
+    {
+      "feature": "has_checking_account",
+      "coefficient": 0.010673112459695733,
+      "absolute_coefficient": 0.010673112459695733
+    },
+    {
+      "feature": "cross_sell_score_missing",
+      "coefficient": -0.00983221832014191,
+      "absolute_coefficient": 0.00983221832014191
+    },
+    {
+      "feature": "monetary_score",
+      "coefficient": 0.009725985875543757,
+      "absolute_coefficient": 0.009725985875543757
+    },
+    {
+      "feature": "total_international_amount_last_month",
+      "coefficient": -0.009444574941674102,
+      "absolute_coefficient": 0.009444574941674102
+    },
+    {
+      "feature": "savings_balance_missing",
+      "coefficient": 0.009429718913870963,
+      "absolute_coefficient": 0.009429718913870963
+    },
+    {
+      "feature": "num_online_transactions_last_month",
+      "coefficient": 0.009229168365300721,
+      "absolute_coefficient": 0.009229168365300721
+    },
+    {
+      "feature": "email_open_rate_last_3_months",
+      "coefficient": 0.008877943348871402,
+      "absolute_coefficient": 0.008877943348871402
+    },
+    {
+      "feature": "savings_growth_rate_last_6_months",
+      "coefficient": -0.008876202778603121,
+      "absolute_coefficient": 0.008876202778603121
+    },
+    {
+      "feature": "num_web_logins_last_month",
+      "coefficient": -0.008780821190123236,
+      "absolute_coefficient": 0.008780821190123236
+    },
+    {
+      "feature": "total_withdrawal_amount_last_month",
+      "coefficient": 0.008776017596513573,
+      "absolute_coefficient": 0.008776017596513573
+    },
+    {
+      "feature": "snapshot_dayofyear",
+      "coefficient": -0.007893211098981027,
+      "absolute_coefficient": 0.007893211098981027
+    },
+    {
+      "feature": "snapshot_month",
+      "coefficient": -0.007818444014381124,
+      "absolute_coefficient": 0.007818444014381124
+    },
+    {
+      "feature": "has_mortgage",
+      "coefficient": -0.007240431875979561,
+      "absolute_coefficient": 0.007240431875979561
+    },
+    {
+      "feature": "checking_balance",
+      "coefficient": -0.007169203156657889,
+      "absolute_coefficient": 0.007169203156657889
+    },
+    {
+      "feature": "num_transactions_last_month",
+      "coefficient": 0.006290693795470406,
+      "absolute_coefficient": 0.006290693795470406
+    },
+    {
+      "feature": "total_transaction_amount_last_month",
+      "coefficient": -0.006047547468902992,
+      "absolute_coefficient": 0.006047547468902992
+    },
+    {
+      "feature": "sms_response_rate_last_3_months",
+      "coefficient": 0.0058369409203922595,
+      "absolute_coefficient": 0.0058369409203922595
+    },
+    {
+      "feature": "avg_transaction_amount_last_month_missing",
+      "coefficient": 0.0056123049726479685,
+      "absolute_coefficient": 0.0056123049726479685
+    },
+    {
+      "feature": "num_products_purchased_last_year",
+      "coefficient": -0.0055421737705303375,
+      "absolute_coefficient": 0.0055421737705303375
+    },
+    {
+      "feature": "checking_balance_missing",
+      "coefficient": -0.005296897507442187,
+      "absolute_coefficient": 0.005296897507442187
+    },
+    {
+      "feature": "num_deposits_last_month",
+      "coefficient": 0.005215976845712397,
+      "absolute_coefficient": 0.005215976845712397
+    },
+    {
+      "feature": "num_bill_payments_last_month",
+      "coefficient": -0.0049489338151022765,
+      "absolute_coefficient": 0.0049489338151022765
+    },
+    {
+      "feature": "total_deposit_amount_last_month",
+      "coefficient": 0.0048736445902819656,
+      "absolute_coefficient": 0.0048736445902819656
+    },
+    {
+      "feature": "frequency_score",
+      "coefficient": 0.004181575266475703,
+      "absolute_coefficient": 0.004181575266475703
+    },
+    {
+      "feature": "num_pos_transactions_last_month",
+      "coefficient": -0.004134208123804543,
+      "absolute_coefficient": 0.004134208123804543
+    },
+    {
+      "feature": "email_open_rate_last_3_months_missing",
+      "coefficient": 0.0039503511431978324,
+      "absolute_coefficient": 0.0039503511431978324
+    },
+    {
+      "feature": "num_atm_withdrawals_last_month",
+      "coefficient": -0.0036911481397610474,
+      "absolute_coefficient": 0.0036911481397610474
+    },
+    {
+      "feature": "email_click_rate_last_3_months_missing",
+      "coefficient": 0.003673545160030367,
+      "absolute_coefficient": 0.003673545160030367
+    },
+    {
+      "feature": "num_overdrafts_last_year",
+      "coefficient": 0.0035657178552969382,
+      "absolute_coefficient": 0.0035657178552969382
+    },
+    {
+      "feature": "total_overdraft_fees_last_year",
+      "coefficient": 0.003565717855296935,
+      "absolute_coefficient": 0.003565717855296935
+    },
+    {
+      "feature": "savings_growth_rate_last_6_months_missing",
+      "coefficient": 0.0034986645132281616,
+      "absolute_coefficient": 0.0034986645132281616
+    },
+    {
+      "feature": "total_financial_balance",
+      "coefficient": 0.0034661145831730777,
+      "absolute_coefficient": 0.0034661145831730777
+    },
+    {
+      "feature": "num_transactions_last_month_missing",
+      "coefficient": 0.0034366783935856947,
+      "absolute_coefficient": 0.0034366783935856947
+    },
+    {
+      "feature": "num_failed_transactions_last_month",
+      "coefficient": 0.0033467404941994387,
+      "absolute_coefficient": 0.0033467404941994387
+    },
+    {
+      "feature": "total_bill_payment_amount_last_month",
+      "coefficient": 0.0033454627828098434,
+      "absolute_coefficient": 0.0033454627828098434
+    },
+    {
+      "feature": "sms_response_rate_last_3_months_missing",
+      "coefficient": 0.0030608003780293177,
+      "absolute_coefficient": 0.0030608003780293177
+    },
+    {
+      "feature": "balance_volatility",
+      "coefficient": -0.002856827894599809,
+      "absolute_coefficient": 0.002856827894599809
+    },
+    {
+      "feature": "balance_volatility_missing",
+      "coefficient": 0.0024730997721019174,
+      "absolute_coefficient": 0.0024730997721019174
+    },
+    {
+      "feature": "financial_stability_missing",
+      "coefficient": -0.002267471727848512,
+      "absolute_coefficient": 0.002267471727848512
+    },
+    {
+      "feature": "credit_score_missing",
+      "coefficient": -0.0022674717278469893,
+      "absolute_coefficient": 0.0022674717278469893
+    },
+    {
+      "feature": "recency_score",
+      "coefficient": -0.002199040728898778,
+      "absolute_coefficient": 0.002199040728898778
+    },
+    {
+      "feature": "num_international_transactions_last_month",
+      "coefficient": 0.0018282456251817942,
+      "absolute_coefficient": 0.0018282456251817942
+    },
+    {
+      "feature": "total_liquid_balance_missing",
+      "coefficient": -0.00178693637640272,
+      "absolute_coefficient": 0.00178693637640272
+    },
+    {
+      "feature": "has_savings_account",
+      "coefficient": -0.001542263111112128,
+      "absolute_coefficient": 0.001542263111112128
+    },
+    {
+      "feature": "total_international_amount_last_month_missing",
+      "coefficient": -0.0014928506731791678,
+      "absolute_coefficient": 0.0014928506731791678
+    },
+    {
+      "feature": "email_click_rate_last_3_months",
+      "coefficient": -0.0012412931778981126,
+      "absolute_coefficient": 0.0012412931778981126
+    },
+    {
+      "feature": "avg_transaction_amount_last_month",
+      "coefficient": -0.0011615500606149797,
+      "absolute_coefficient": 0.0011615500606149797
+    },
+    {
+      "feature": "age",
+      "coefficient": 0.0011513752961799094,
+      "absolute_coefficient": 0.0011513752961799094
+    },
+    {
+      "feature": "has_active_credit_products",
+      "coefficient": 0.0008019884649322851,
+      "absolute_coefficient": 0.0008019884649322851
+    },
+    {
+      "feature": "total_financial_balance_missing",
+      "coefficient": -0.0007878303779963124,
+      "absolute_coefficient": 0.0007878303779963124
+    },
+    {
+      "feature": "num_dependents",
+      "coefficient": 0.0007481856456699415,
+      "absolute_coefficient": 0.0007481856456699415
+    },
+    {
+      "feature": "num_customer_service_calls_last_month",
+      "coefficient": -0.0006716136140698702,
+      "absolute_coefficient": 0.0006716136140698702
+    },
+    {
+      "feature": "deposit_withdrawal_net",
+      "coefficient": -0.0003848092643750818,
+      "absolute_coefficient": 0.0003848092643750818
+    },
+    {
+      "feature": "investment_balance_missing",
+      "coefficient": 0.0003730842790114054,
+      "absolute_coefficient": 0.0003730842790114054
+    },
+    {
+      "feature": "total_transaction_amount_last_month_missing",
+      "coefficient": -6.411768486810763e-20,
+      "absolute_coefficient": 6.411768486810763e-20
+    },
+    {
+      "feature": "has_personal_loan_missing",
+      "coefficient": -5.38134484108768e-20,
+      "absolute_coefficient": 5.38134484108768e-20
+    },
+    {
+      "feature": "num_failed_transactions_last_month_missing",
+      "coefficient": 1.8360912969900478e-20,
+      "absolute_coefficient": 1.8360912969900478e-20
+    },
+    {
+      "feature": "tenure_months_missing",
+      "coefficient": -6.110852384621441e-21,
+      "absolute_coefficient": 6.110852384621441e-21
+    },
+    {
+      "feature": "num_products_missing",
+      "coefficient": 4.600995143145057e-21,
+      "absolute_coefficient": 4.600995143145057e-21
+    },
+    {
+      "feature": "num_international_transactions_last_month_missing",
+      "coefficient": 3.0732124856834954e-21,
+      "absolute_coefficient": 3.0732124856834954e-21
+    },
+    {
+      "feature": "debt_to_income_ratio_missing",
+      "coefficient": 8.711512737440824e-24,
+      "absolute_coefficient": 8.711512737440824e-24
+    },
+    {
+      "feature": "num_atm_withdrawals_last_month_missing",
+      "coefficient": -7.949036140761005e-24,
+      "absolute_coefficient": 7.949036140761005e-24
+    },
+    {
+      "feature": "deposit_withdrawal_net_missing",
+      "coefficient": -4.451688289505164e-25,
+      "absolute_coefficient": 4.451688289505164e-25
+    },
+    {
+      "feature": "num_dependents_missing",
+      "coefficient": 5.757140616904838e-26,
+      "absolute_coefficient": 5.757140616904838e-26
+    },
+    {
+      "feature": "num_late_payments_last_year_missing",
+      "coefficient": -5.231917176783558e-27,
+      "absolute_coefficient": 5.231917176783558e-27
+    },
+    {
+      "feature": "age_missing",
+      "coefficient": 3.639074168114619e-27,
+      "absolute_coefficient": 3.639074168114619e-27
+    },
+    {
+      "feature": "num_withdrawals_last_month_missing",
+      "coefficient": -3.4402545222416976e-27,
+      "absolute_coefficient": 3.4402545222416976e-27
+    },
+    {
+      "feature": "owns_home_missing",
+      "coefficient": 1.834064495052236e-27,
+      "absolute_coefficient": 1.834064495052236e-27
+    },
+    {
+      "feature": "total_overdraft_fees_last_year_missing",
+      "coefficient": 1.8854707764404858e-28,
+      "absolute_coefficient": 1.8854707764404858e-28
+    },
+    {
+      "feature": "snapshot_dayofyear_missing",
+      "coefficient": 1.7141658480968015e-28,
+      "absolute_coefficient": 1.7141658480968015e-28
+    },
+    {
+      "feature": "num_online_transactions_last_month_missing",
+      "coefficient": 2.7802068952286243e-29,
+      "absolute_coefficient": 2.7802068952286243e-29
+    },
+    {
+      "feature": "debt_by_risk_interaction_missing",
+      "coefficient": 2.8780409378176157e-30,
+      "absolute_coefficient": 2.8780409378176157e-30
+    },
+    {
+      "feature": "num_customer_service_calls_last_month_missing",
+      "coefficient": 2.3066929831302248e-30,
+      "absolute_coefficient": 2.3066929831302248e-30
+    },
+    {
+      "feature": "total_withdrawal_amount_last_month_missing",
+      "coefficient": -1.5004909689152707e-30,
+      "absolute_coefficient": 1.5004909689152707e-30
+    },
+    {
+      "feature": "digital_logins_total_missing",
+      "coefficient": -7.2370987524858745e-31,
+      "absolute_coefficient": 7.2370987524858745e-31
+    },
+    {
+      "feature": "has_credit_card_missing",
+      "coefficient": -5.737953447045485e-31,
+      "absolute_coefficient": 5.737953447045485e-31
+    },
+    {
+      "feature": "has_mortgage_missing",
+      "coefficient": -4.484916493487347e-31,
+      "absolute_coefficient": 4.484916493487347e-31
+    },
+    {
+      "feature": "premium_financial_profile_missing",
+      "coefficient": -1.1030092004696703e-31,
+      "absolute_coefficient": 1.1030092004696703e-31
+    },
+    {
+      "feature": "avg_monthly_balance_missing",
+      "coefficient": 8.70523765873893e-32,
+      "absolute_coefficient": 8.70523765873893e-32
+    },
+    {
+      "feature": "num_bill_payments_last_month_missing",
+      "coefficient": 3.713539071238425e-32,
+      "absolute_coefficient": 3.713539071238425e-32
+    },
+    {
+      "feature": "credit_utilization_missing",
+      "coefficient": 3.4172846509011646e-33,
+      "absolute_coefficient": 3.4172846509011646e-33
+    },
+    {
+      "feature": "has_auto_pay_setup_missing",
+      "coefficient": 2.6171622593724275e-33,
+      "absolute_coefficient": 2.6171622593724275e-33
+    },
+    {
+      "feature": "snapshot_month_missing",
+      "coefficient": 6.22177248305531e-34,
+      "absolute_coefficient": 6.22177248305531e-34
+    },
+    {
+      "feature": "credit_card_balance_missing",
+      "coefficient": -3.2715066750159507e-34,
+      "absolute_coefficient": 3.2715066750159507e-34
+    },
+    {
+      "feature": "has_investment_account_missing",
+      "coefficient": -1.7526932559957536e-34,
+      "absolute_coefficient": 1.7526932559957536e-34
+    },
+    {
+      "feature": "num_products_purchased_last_year_missing",
+      "coefficient": -1.1781363186640834e-34,
+      "absolute_coefficient": 1.1781363186640834e-34
+    },
+    {
+      "feature": "frequency_score_missing",
+      "coefficient": 1.1061912613346086e-34,
+      "absolute_coefficient": 1.1061912613346086e-34
+    },
+    {
+      "feature": "months_since_last_product_purchase_missing",
+      "coefficient": 1.0155035768513003e-34,
+      "absolute_coefficient": 1.0155035768513003e-34
+    },
+    {
+      "feature": "num_branch_visits_last_month_missing",
+      "coefficient": 4.885779398520345e-35,
+      "absolute_coefficient": 4.885779398520345e-35
+    },
+    {
+      "feature": "has_any_investment_signal_missing",
+      "coefficient": -4.45621564869663e-35,
+      "absolute_coefficient": 4.45621564869663e-35
+    },
+    {
+      "feature": "num_mobile_logins_last_month_missing",
+      "coefficient": -3.565653262052463e-35,
+      "absolute_coefficient": 3.565653262052463e-35
+    },
+    {
+      "feature": "recency_score_missing",
+      "coefficient": 3.4780406642024294e-35,
+      "absolute_coefficient": 3.4780406642024294e-35
+    },
+    {
+      "feature": "risk_score_missing",
+      "coefficient": 1.4848906921184097e-35,
+      "absolute_coefficient": 1.4848906921184097e-35
+    },
+    {
+      "feature": "num_overdrafts_last_year_missing",
+      "coefficient": 1.3483183458904482e-35,
+      "absolute_coefficient": 1.3483183458904482e-35
+    },
+    {
+      "feature": "num_web_logins_last_month_missing",
+      "coefficient": -9.205482504378648e-36,
+      "absolute_coefficient": 9.205482504378648e-36
+    },
+    {
+      "feature": "num_pos_transactions_last_month_missing",
+      "coefficient": 5.970614393535375e-36,
+      "absolute_coefficient": 5.970614393535375e-36
+    },
+    {
+      "feature": "has_active_credit_products_missing",
+      "coefficient": -2.193111714647648e-36,
+      "absolute_coefficient": 2.193111714647648e-36
+    },
+    {
+      "feature": "monetary_score_missing",
+      "coefficient": -2.4845174035759097e-38,
+      "absolute_coefficient": 2.4845174035759097e-38
+    },
+    {
+      "feature": "has_checking_account_missing",
+      "coefficient": 1.7028796952205845e-38,
+      "absolute_coefficient": 1.7028796952205845e-38
+    },
+    {
+      "feature": "has_savings_account_missing",
+      "coefficient": -1.6541828410709235e-38,
+      "absolute_coefficient": 1.6541828410709235e-38
+    },
+    {
+      "feature": "num_deposits_last_month_missing",
+      "coefficient": 2.9147429719550884e-39,
+      "absolute_coefficient": 2.9147429719550884e-39
+    },
+    {
+      "feature": "has_direct_deposit_missing",
+      "coefficient": 7.441792202643678e-40,
+      "absolute_coefficient": 7.441792202643678e-40
+    },
+    {
+      "feature": "total_deposit_amount_last_month_missing",
+      "coefficient": -1.7038380568837424e-40,
+      "absolute_coefficient": 1.7038380568837424e-40
+    },
+    {
+      "feature": "total_bill_payment_amount_last_month_missing",
+      "coefficient": -1.1322744187306338e-41,
+      "absolute_coefficient": 1.1322744187306338e-41
+    }
+  ],
+  "prediction_summary": {
+    "rows": 12000,
+    "mean_probability": 0.14836307718865904,
+    "min_probability": 0.01831437759306286,
+    "max_probability": 0.9999999954868379,
+    "top_decile_mean_probability": 0.46010102754138094
+  }
+}
